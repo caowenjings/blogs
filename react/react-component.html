@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>React组件库 | 静</title>
+    <meta name="generator" content="VuePress 1.9.8">
+    
+    <meta name="description" content="每天进步一点点">
+    
+    <link rel="preload" href="/blogs/assets/css/0.styles.2b370ae1.css" as="style"><link rel="preload" href="/blogs/assets/js/app.318ed052.js" as="script"><link rel="preload" href="/blogs/assets/js/2.b253f094.js" as="script"><link rel="preload" href="/blogs/assets/js/61.6a2c3e9b.js" as="script"><link rel="prefetch" href="/blogs/assets/js/10.dcbb07c9.js"><link rel="prefetch" href="/blogs/assets/js/11.38fbba51.js"><link rel="prefetch" href="/blogs/assets/js/12.2ea56a59.js"><link rel="prefetch" href="/blogs/assets/js/13.0e9d039e.js"><link rel="prefetch" href="/blogs/assets/js/14.2d2bccdc.js"><link rel="prefetch" href="/blogs/assets/js/15.664c4ac5.js"><link rel="prefetch" href="/blogs/assets/js/16.d2aac269.js"><link rel="prefetch" href="/blogs/assets/js/17.ba84ddbb.js"><link rel="prefetch" href="/blogs/assets/js/18.485ea954.js"><link rel="prefetch" href="/blogs/assets/js/19.a66e908f.js"><link rel="prefetch" href="/blogs/assets/js/20.0b04d503.js"><link rel="prefetch" href="/blogs/assets/js/21.6be10f09.js"><link rel="prefetch" href="/blogs/assets/js/22.159acd7d.js"><link rel="prefetch" href="/blogs/assets/js/23.4f195fc5.js"><link rel="prefetch" href="/blogs/assets/js/24.7f87a588.js"><link rel="prefetch" href="/blogs/assets/js/25.5d5a6655.js"><link rel="prefetch" href="/blogs/assets/js/26.ae6e384a.js"><link rel="prefetch" href="/blogs/assets/js/27.242c2814.js"><link rel="prefetch" href="/blogs/assets/js/28.3a561971.js"><link rel="prefetch" href="/blogs/assets/js/29.5f10fcb0.js"><link rel="prefetch" href="/blogs/assets/js/3.3f822af5.js"><link rel="prefetch" href="/blogs/assets/js/30.936b6878.js"><link rel="prefetch" href="/blogs/assets/js/31.1347c229.js"><link rel="prefetch" href="/blogs/assets/js/32.d7feb56f.js"><link rel="prefetch" href="/blogs/assets/js/33.df5562d6.js"><link rel="prefetch" href="/blogs/assets/js/34.0c0a3c4a.js"><link rel="prefetch" href="/blogs/assets/js/35.986ca927.js"><link rel="prefetch" href="/blogs/assets/js/36.11d5619d.js"><link rel="prefetch" href="/blogs/assets/js/37.226a7009.js"><link rel="prefetch" href="/blogs/assets/js/38.d890e85c.js"><link rel="prefetch" href="/blogs/assets/js/39.3fea6c86.js"><link rel="prefetch" href="/blogs/assets/js/4.203b8c1d.js"><link rel="prefetch" href="/blogs/assets/js/40.ea2c4b60.js"><link rel="prefetch" href="/blogs/assets/js/41.c9ccd141.js"><link rel="prefetch" href="/blogs/assets/js/42.8681e81b.js"><link rel="prefetch" href="/blogs/assets/js/43.6722b2e0.js"><link rel="prefetch" href="/blogs/assets/js/44.6794f235.js"><link rel="prefetch" href="/blogs/assets/js/45.a40d2a94.js"><link rel="prefetch" href="/blogs/assets/js/46.661e6a50.js"><link rel="prefetch" href="/blogs/assets/js/47.b764e11a.js"><link rel="prefetch" href="/blogs/assets/js/48.44b2ca69.js"><link rel="prefetch" href="/blogs/assets/js/49.07d58d76.js"><link rel="prefetch" href="/blogs/assets/js/5.241843e3.js"><link rel="prefetch" href="/blogs/assets/js/50.c8d2e9af.js"><link rel="prefetch" href="/blogs/assets/js/51.33182cb5.js"><link rel="prefetch" href="/blogs/assets/js/52.ffc8990e.js"><link rel="prefetch" href="/blogs/assets/js/53.fe9f26ff.js"><link rel="prefetch" href="/blogs/assets/js/54.03f0e4ee.js"><link rel="prefetch" href="/blogs/assets/js/55.bcfe8e3c.js"><link rel="prefetch" href="/blogs/assets/js/56.e3679f22.js"><link rel="prefetch" href="/blogs/assets/js/57.fbec18db.js"><link rel="prefetch" href="/blogs/assets/js/58.7dfa5e6d.js"><link rel="prefetch" href="/blogs/assets/js/59.dda5f67e.js"><link rel="prefetch" href="/blogs/assets/js/6.181d1f0e.js"><link rel="prefetch" href="/blogs/assets/js/60.270ae626.js"><link rel="prefetch" href="/blogs/assets/js/62.9990c1e5.js"><link rel="prefetch" href="/blogs/assets/js/63.5fbd0e7f.js"><link rel="prefetch" href="/blogs/assets/js/64.ea80a730.js"><link rel="prefetch" href="/blogs/assets/js/65.9bda3580.js"><link rel="prefetch" href="/blogs/assets/js/66.6976f074.js"><link rel="prefetch" href="/blogs/assets/js/67.6421fc3e.js"><link rel="prefetch" href="/blogs/assets/js/68.3c9a69d8.js"><link rel="prefetch" href="/blogs/assets/js/69.e2d07711.js"><link rel="prefetch" href="/blogs/assets/js/7.8d512ac6.js"><link rel="prefetch" href="/blogs/assets/js/70.686ebe8e.js"><link rel="prefetch" href="/blogs/assets/js/71.50a43118.js"><link rel="prefetch" href="/blogs/assets/js/72.3c0b4a7f.js"><link rel="prefetch" href="/blogs/assets/js/73.74d2bda0.js"><link rel="prefetch" href="/blogs/assets/js/74.f1003cb4.js"><link rel="prefetch" href="/blogs/assets/js/75.c1f4c98b.js"><link rel="prefetch" href="/blogs/assets/js/76.4dc3f570.js"><link rel="prefetch" href="/blogs/assets/js/77.5f8de3e2.js"><link rel="prefetch" href="/blogs/assets/js/78.3417b478.js"><link rel="prefetch" href="/blogs/assets/js/79.92ee8e13.js"><link rel="prefetch" href="/blogs/assets/js/8.2ea5d4ca.js"><link rel="prefetch" href="/blogs/assets/js/80.d54c6762.js"><link rel="prefetch" href="/blogs/assets/js/9.df6f0129.js">
+    <link rel="stylesheet" href="/blogs/assets/css/0.styles.2b370ae1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blogs/" class="home-link router-link-active"><img src="./public/head.png" alt="静" class="logo"> <span class="site-name can-hide">静</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blogs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="js" class="dropdown-title"><span class="title">js</span> <span class="arrow down"></span></button> <button type="button" aria-label="js" class="mobile-dropdown-title"><span class="title">js</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/js/js/" class="nav-link">
+  js杂记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/js/promise/" class="nav-link">
+  Promise规范和应用
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/js/browser/" class="nav-link">
+  浏览器对象详解
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/js/js_oop/" class="nav-link">
+  面向对象编程
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/js/es6/" class="nav-link">
+  ES6及ESNext规范详解
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/js/this/" class="nav-link">
+  this指向、作用域、闭包
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/js/git/" class="nav-link">
+  git使用
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/ts/typeScript/" class="nav-link">
+  ts初探
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/ts/tsBasic/" class="nav-link">
+  ts基础
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/ts/tsProject/" class="nav-link">
+  ts工程
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程化" class="dropdown-title"><span class="title">工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="工程化" class="mobile-dropdown-title"><span class="title">工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/js/js_module/" class="nav-link">
+  模块化规范
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/js/js_project/" class="nav-link">
+  前端工程化详解
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/project/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/project/babel/" class="nav-link">
+  babel
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/tools/autotest/" class="nav-link">
+  自动化测试和部署
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/tools/ast/" class="nav-link">
+  AST解析
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/tools/solution/" class="nav-link">
+  前端方案
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/tools/js_tools/" class="nav-link">
+  常用工具
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vue" class="dropdown-title"><span class="title">vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="vue" class="mobile-dropdown-title"><span class="title">vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-basic/" class="nav-link">
+  vue2.0基础
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-advance/" class="nav-link">
+  vue2.0进阶
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-cli/" class="nav-link">
+  vue-cli详解
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-loader/" class="nav-link">
+  vue-loader
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-router/" class="nav-link">
+  vue-router
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vuex/" class="nav-link">
+  vuex
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-ssr/" class="nav-link">
+  vue-ssr
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-i18n/" class="nav-link">
+  vue-i18n
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-life/" class="nav-link">
+  vue生命周期
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-reactive/" class="nav-link">
+  响应式原理
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-diff/" class="nav-link">
+  diff原理
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-compiler/" class="nav-link">
+  编译原理
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-refs/" class="nav-link">
+  vue实战总结
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="react" class="dropdown-title"><span class="title">react</span> <span class="arrow down"></span></button> <button type="button" aria-label="react" class="mobile-dropdown-title"><span class="title">react</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/react/react/" class="nav-link">
+  react基础
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-advance/" class="nav-link">
+  react进阶
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-router/" class="nav-link">
+  react-router
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-state/" class="nav-link">
+  react-状态管理
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-ssr/" class="nav-link">
+  react同构
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-component/" class="nav-link">
+  react组件封装
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-code/" class="nav-link">
+  react源码分析
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-question/" class="nav-link">
+  react问题整理
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-ts-project/" class="nav-link">
+  react-ts实战
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="nodejs" class="dropdown-title"><span class="title">nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="nodejs" class="mobile-dropdown-title"><span class="title">nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/nodejs/basic/" class="nav-link">
+  nodejs基础
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/nodejs/module/" class="nav-link">
+  node常用框架
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/nodejs/http/" class="nav-link">
+  nodejs网络及部署
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/nodejs/express-ts/" class="nav-link">
+  express-ts实战
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/nodejs/info/" class="nav-link">
+  Nodejs前研
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/frontend/interview/" class="nav-link">
+  前端面试
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/performance/" class="nav-link">
+  前端性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/explorer/" class="nav-link">
+  浏览器进程和线程
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/security-control/" class="nav-link">
+  前端网络安全
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/lowcode/" class="nav-link">
+  低代码平台
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/micro-frontend/" class="nav-link">
+  微前端
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/designMode/" class="nav-link">
+  前端设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/css/" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/mini-program/" class="nav-link">
+  小程序
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/hybrid/" class="nav-link">
+  Hybrid开发及原理
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/canvas/" class="nav-link">
+  canvas
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/graph/" class="nav-link">
+  图片格式
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/web3/" class="nav-link">
+  web3探索
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="算法" class="dropdown-title"><span class="title">算法</span> <span class="arrow down"></span></button> <button type="button" aria-label="算法" class="mobile-dropdown-title"><span class="title">算法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/algorithm/graph/" class="nav-link">
+  图的存储和遍历
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/algorithm/dpointer/" class="nav-link">
+  双指针
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/algorithm/levenshtein/" class="nav-link">
+  最端编辑距离算法
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/algorithm/greed/" class="nav-link">
+  贪心算法
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/algorithm/dp/" class="nav-link">
+  动态规划
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/algorithm/leetcode/" class="nav-link">
+  leetcode
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/backend/nginx/" class="nav-link">
+  nginx
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/backend/springboot/" class="nav-link">
+  Springboot
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/backend/mybatis/" class="nav-link">
+  mybatis
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/backend/uml/" class="nav-link">
+  uml类图
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/backend/ddd/" class="nav-link">
+  领域驱动设计
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="友链" class="dropdown-title"><span class="title">友链</span> <span class="arrow down"></span></button> <button type="button" aria-label="友链" class="mobile-dropdown-title"><span class="title">友链</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://lxchuan12.gitee.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  若川博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="http://www.inode.club/interview/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  程序员成长指北-node，面
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blogs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="js" class="dropdown-title"><span class="title">js</span> <span class="arrow down"></span></button> <button type="button" aria-label="js" class="mobile-dropdown-title"><span class="title">js</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/js/js/" class="nav-link">
+  js杂记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/js/promise/" class="nav-link">
+  Promise规范和应用
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/js/browser/" class="nav-link">
+  浏览器对象详解
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/js/js_oop/" class="nav-link">
+  面向对象编程
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/js/es6/" class="nav-link">
+  ES6及ESNext规范详解
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/js/this/" class="nav-link">
+  this指向、作用域、闭包
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/js/git/" class="nav-link">
+  git使用
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/ts/typeScript/" class="nav-link">
+  ts初探
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/ts/tsBasic/" class="nav-link">
+  ts基础
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/ts/tsProject/" class="nav-link">
+  ts工程
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程化" class="dropdown-title"><span class="title">工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="工程化" class="mobile-dropdown-title"><span class="title">工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/js/js_module/" class="nav-link">
+  模块化规范
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/js/js_project/" class="nav-link">
+  前端工程化详解
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/project/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/project/babel/" class="nav-link">
+  babel
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/tools/autotest/" class="nav-link">
+  自动化测试和部署
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/tools/ast/" class="nav-link">
+  AST解析
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/tools/solution/" class="nav-link">
+  前端方案
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/tools/js_tools/" class="nav-link">
+  常用工具
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vue" class="dropdown-title"><span class="title">vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="vue" class="mobile-dropdown-title"><span class="title">vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-basic/" class="nav-link">
+  vue2.0基础
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-advance/" class="nav-link">
+  vue2.0进阶
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-cli/" class="nav-link">
+  vue-cli详解
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-loader/" class="nav-link">
+  vue-loader
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-router/" class="nav-link">
+  vue-router
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vuex/" class="nav-link">
+  vuex
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-ssr/" class="nav-link">
+  vue-ssr
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-i18n/" class="nav-link">
+  vue-i18n
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-life/" class="nav-link">
+  vue生命周期
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-reactive/" class="nav-link">
+  响应式原理
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-diff/" class="nav-link">
+  diff原理
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-compiler/" class="nav-link">
+  编译原理
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-refs/" class="nav-link">
+  vue实战总结
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="react" class="dropdown-title"><span class="title">react</span> <span class="arrow down"></span></button> <button type="button" aria-label="react" class="mobile-dropdown-title"><span class="title">react</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/react/react/" class="nav-link">
+  react基础
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-advance/" class="nav-link">
+  react进阶
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-router/" class="nav-link">
+  react-router
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-state/" class="nav-link">
+  react-状态管理
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-ssr/" class="nav-link">
+  react同构
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-component/" class="nav-link">
+  react组件封装
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-code/" class="nav-link">
+  react源码分析
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-question/" class="nav-link">
+  react问题整理
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-ts-project/" class="nav-link">
+  react-ts实战
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="nodejs" class="dropdown-title"><span class="title">nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="nodejs" class="mobile-dropdown-title"><span class="title">nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/nodejs/basic/" class="nav-link">
+  nodejs基础
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/nodejs/module/" class="nav-link">
+  node常用框架
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/nodejs/http/" class="nav-link">
+  nodejs网络及部署
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/nodejs/express-ts/" class="nav-link">
+  express-ts实战
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/nodejs/info/" class="nav-link">
+  Nodejs前研
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/frontend/interview/" class="nav-link">
+  前端面试
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/performance/" class="nav-link">
+  前端性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/explorer/" class="nav-link">
+  浏览器进程和线程
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/security-control/" class="nav-link">
+  前端网络安全
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/lowcode/" class="nav-link">
+  低代码平台
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/micro-frontend/" class="nav-link">
+  微前端
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/designMode/" class="nav-link">
+  前端设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/css/" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/mini-program/" class="nav-link">
+  小程序
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/hybrid/" class="nav-link">
+  Hybrid开发及原理
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/canvas/" class="nav-link">
+  canvas
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/graph/" class="nav-link">
+  图片格式
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/web3/" class="nav-link">
+  web3探索
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="算法" class="dropdown-title"><span class="title">算法</span> <span class="arrow down"></span></button> <button type="button" aria-label="算法" class="mobile-dropdown-title"><span class="title">算法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/algorithm/graph/" class="nav-link">
+  图的存储和遍历
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/algorithm/dpointer/" class="nav-link">
+  双指针
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/algorithm/levenshtein/" class="nav-link">
+  最端编辑距离算法
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/algorithm/greed/" class="nav-link">
+  贪心算法
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/algorithm/dp/" class="nav-link">
+  动态规划
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/algorithm/leetcode/" class="nav-link">
+  leetcode
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/backend/nginx/" class="nav-link">
+  nginx
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/backend/springboot/" class="nav-link">
+  Springboot
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/backend/mybatis/" class="nav-link">
+  mybatis
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/backend/uml/" class="nav-link">
+  uml类图
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/backend/ddd/" class="nav-link">
+  领域驱动设计
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="友链" class="dropdown-title"><span class="title">友链</span> <span class="arrow down"></span></button> <button type="button" aria-label="友链" class="mobile-dropdown-title"><span class="title">友链</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://lxchuan12.gitee.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  若川博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="http://www.inode.club/interview/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  程序员成长指北-node，面
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>react基础</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/react/react.html" class="sidebar-link">React基础</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>react进阶</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/react/react-advance.html" class="sidebar-link">React进阶</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>react-router</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/react/react-router.html" class="sidebar-link">react-router</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>react-状态管理</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/react/react-state.html" class="sidebar-link">react状态管理</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>react-SSR</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/react/react-ssr.html" class="sidebar-link">React-SSR</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>react组件封装</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/react/react-component.html" aria-current="page" class="active sidebar-link">React组件库</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blogs/react/react-component.html#_1、简介" class="sidebar-link">1、简介</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blogs/react/react-component.html#_1、组件库优点" class="sidebar-link">1、组件库优点</a></li><li class="sidebar-sub-header"><a href="/blogs/react/react-component.html#_2、思路" class="sidebar-link">2、思路</a></li></ul></li><li class="sidebar-sub-header"><a href="/blogs/react/react-component.html#_2、实现" class="sidebar-link">2、实现</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blogs/react/react-component.html#_1、组件库服务" class="sidebar-link">1、组件库服务</a></li><li class="sidebar-sub-header"><a href="/blogs/react/react-component.html#_2、实现细节" class="sidebar-link">2、实现细节</a></li></ul></li><li class="sidebar-sub-header"><a href="/blogs/react/react-component.html#_3、代码" class="sidebar-link">3、代码</a></li><li class="sidebar-sub-header"><a href="/blogs/react/react-component.html#_4、面试" class="sidebar-link">4、面试</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blogs/react/react-component.html#_1、antd-组件化设计思路是什么" class="sidebar-link">1、antd 组件化设计思路是什么？</a></li></ul></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>react源码分析</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/react/react-code.html" class="sidebar-link">React源码解析</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>react实战梳理</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/react/react-question.html" class="sidebar-link">React实战梳理</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>react-ts实战</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/react/react-ts-project.html" class="sidebar-link">React-ts实战梳理</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="react-组件库"><a href="#react-组件库" class="header-anchor">#</a> React 组件库</h1> <p>参考资料</p> <ul><li>1.<a href="https://ant.design/docs/react/introduce-cn" target="_blank" rel="noopener noreferrer">Ant Design<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li>2.<a href="https://mobile.ant.design/zh/" target="_blank" rel="noopener noreferrer">Ant Design Mobile<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li>3.<a href="https://v3.umijs.org/zh-CN" target="_blank" rel="noopener noreferrer">Umi 官网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li>4.<a href="https://blog.csdn.net/qq_37648307/article/details/106456616" target="_blank" rel="noopener noreferrer">Create React App 配置<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h2 id="_1、简介"><a href="#_1、简介" class="header-anchor">#</a> 1、简介</h2> <h3 id="_1、组件库优点"><a href="#_1、组件库优点" class="header-anchor">#</a> 1、组件库优点</h3> <ul><li>推动标准统一（UI 设计相关）</li> <li>提高开发效率（工程师无需重新开发单独的组件，直接复用已有的组件库开发业务组件及页面）</li> <li>方便扩展（对组件做改造或者扩展的时候，直接对框架进行升级即可）</li> <li>性能优化：通用组件通过缓存，提升页面加载速度（减少冗余代码，文件体积变小）</li></ul> <h3 id="_2、思路"><a href="#_2、思路" class="header-anchor">#</a> 2、思路</h3> <ul><li>自上而下，梳理线上页面，综合统计，从业务角度做拆分，然后细化为粒度更细的组件，反哺现在的移动组件库，逐步完善</li> <li>自下而上，从最新的设计规范出发，对比市面上比较主流的组件库，查缺补漏，完善现有的组件库</li></ul> <h2 id="_2、实现"><a href="#_2、实现" class="header-anchor">#</a> 2、实现</h2> <h3 id="_1、组件库服务"><a href="#_1、组件库服务" class="header-anchor">#</a> 1、组件库服务</h3> <p>底层框架：react、TypeScript、less/sass、webpack5
+组件：通用类组件、导航栏组件、布局类组件、录入类组件、展示类组件、反馈类组件、手势类组件等
+对外输出：中后台组件库、BD 工具组件库</p> <h3 id="_2、实现细节"><a href="#_2、实现细节" class="header-anchor">#</a> 2、实现细节</h3> <p>技术栈：react + typescript + webpack + less</p> <p>文档工具：docz、storybook、react-docgen-typescript + react-styleguidist</p> <h2 id="_3、代码"><a href="#_3、代码" class="header-anchor">#</a> 3、代码</h2> <p>信息组件：index.less、index.md、index.tsx、interface.ts</p> <ul><li>interface.ts 定义输入 props 属性</li> <li>interface.ts 定义输出的函数式组件，状态内部封闭可使用 hooks</li> <li>index.less 定义组件对应的样式及动画</li> <li>index.md 定义相关文档</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//interface.ts</span>
+<span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">MessageProps</span> <span class="token punctuation">{</span>
+    className<span class="token operator">?</span><span class="token operator">:</span> string<span class="token punctuation">;</span>         <span class="token comment">//需要传递的class</span>
+    children<span class="token operator">?</span><span class="token operator">:</span> React<span class="token punctuation">.</span>ReactNode<span class="token punctuation">;</span> <span class="token comment">//传递的包裹的内容</span>
+    type<span class="token operator">?</span><span class="token operator">:</span> string<span class="token punctuation">;</span>              <span class="token comment">//对应的标签的内容</span>
+    isIcon<span class="token operator">?</span><span class="token operator">:</span> boolean<span class="token punctuation">;</span>           <span class="token comment">//是否展示图标</span>
+    isScroll<span class="token operator">?</span><span class="token operator">:</span> boolean<span class="token punctuation">;</span>         <span class="token comment">//是否滚动动画</span>
+    isClose<span class="token operator">?</span><span class="token operator">:</span> boolean<span class="token punctuation">;</span>          <span class="token comment">//是否需要关闭按钮</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//index.tsx</span>
+<span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> useEffect<span class="token punctuation">,</span> useRef<span class="token punctuation">,</span> useState <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;react&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> InfoCircleOutlined<span class="token punctuation">,</span> CloseOutlined <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@ant-design/icons'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> MessageProps <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;./interface&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token string">&quot;./index.less&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token literal-property property">Message</span><span class="token operator">:</span> React<span class="token punctuation">.</span><span class="token constant">FC</span><span class="token operator">&lt;</span>MessageProps<span class="token operator">&gt;</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token literal-property property">props</span><span class="token operator">:</span> MessageProps</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> className<span class="token punctuation">,</span> children<span class="token punctuation">,</span> type<span class="token punctuation">,</span> isIcon<span class="token punctuation">,</span> isScroll<span class="token punctuation">,</span> isClose <span class="token punctuation">}</span> <span class="token operator">=</span> props<span class="token punctuation">;</span>
+    <span class="token keyword">const</span> contentRef <span class="token operator">=</span> useRef<span class="token operator">&lt;</span>HTMLDivElement<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> <span class="token punctuation">[</span>duration<span class="token punctuation">,</span> setDuration<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">&quot;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> <span class="token punctuation">[</span>closeMessageVal<span class="token punctuation">,</span> setCloseMessageVal<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">//构建class</span>
+    <span class="token keyword">const</span> <span class="token function-variable function">getClass</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">react-impression-mobile-tag
+        </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>type<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">
+        </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>isScroll <span class="token operator">?</span> <span class="token string">&quot;scroll&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">
+        </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>className <span class="token operator">||</span> <span class="token string">&quot;&quot;</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">const</span> <span class="token function-variable function">closeMessage</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token function">setCloseMessageVal</span><span class="token punctuation">(</span><span class="token operator">!</span>closeMessageVal<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>isScroll<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">const</span> dom <span class="token operator">=</span> contentRef<span class="token punctuation">.</span>current<span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>dom<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">const</span> <span class="token punctuation">{</span> width <span class="token punctuation">}</span> <span class="token operator">=</span> dom<span class="token punctuation">.</span><span class="token function">getBoundingClientRect</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token function">setDuration</span><span class="token punctuation">(</span><span class="token number">6</span> <span class="token operator">+</span> <span class="token string">&quot;s&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>children<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+        <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token punctuation">{</span><span class="token function">getClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+            style<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token literal-property property">display</span><span class="token operator">:</span> closeMessageVal <span class="token operator">?</span> <span class="token string">&quot;block&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;none&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>div
+                className<span class="token operator">=</span><span class="token string">&quot;textContent&quot;</span>
+                ref<span class="token operator">=</span><span class="token punctuation">{</span>contentRef<span class="token punctuation">}</span>
+                style<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+                    <span class="token literal-property property">animationDelay</span><span class="token operator">:</span> duration<span class="token punctuation">,</span>
+                    <span class="token literal-property property">animationDuration</span><span class="token operator">:</span> duration <span class="token operator">?</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">0s, </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>duration<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span> <span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">}</span>
+            <span class="token operator">&gt;</span>
+                <span class="token punctuation">{</span>isIcon <span class="token operator">&amp;&amp;</span> <span class="token operator">&lt;</span>InfoCircleOutlined <span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">}</span>
+                <span class="token punctuation">{</span>children<span class="token punctuation">}</span>
+                <span class="token punctuation">{</span>isClose <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>
+                    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">&quot;close&quot;</span> onClick<span class="token operator">=</span><span class="token punctuation">{</span>closeMessage<span class="token punctuation">}</span><span class="token operator">&gt;</span>
+                        <span class="token operator">&lt;</span>CloseOutlined <span class="token operator">/</span><span class="token operator">&gt;</span>
+                    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+                <span class="token punctuation">)</span><span class="token punctuation">}</span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+Message<span class="token punctuation">.</span>defaultProps <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">&quot;primary&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">isIcon</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">isScroll</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">isClose</span><span class="token operator">:</span> <span class="token boolean">false</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> Message<span class="token punctuation">;</span>
+
+<span class="token comment">//index.less</span>
+<span class="token punctuation">.</span>scroll <span class="token punctuation">{</span>
+  <span class="token literal-property property">position</span><span class="token operator">:</span> relative<span class="token punctuation">;</span>
+  <span class="token literal-property property">overflow</span><span class="token operator">:</span> hidden<span class="token punctuation">;</span>
+  <span class="token literal-property property">height</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">.</span>33vw<span class="token punctuation">;</span>
+
+  <span class="token operator">&amp;</span><span class="token operator">:</span><span class="token operator">:</span>before<span class="token punctuation">{</span>
+    <span class="token literal-property property">position</span><span class="token operator">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token literal-property property">left</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    background<span class="token operator">-</span>color<span class="token operator">:</span> #<span class="token constant">E5F3FD</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">content</span><span class="token operator">:</span> <span class="token string">&quot; &quot;</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">width</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">.</span>27vw<span class="token punctuation">;</span>
+    <span class="token literal-property property">height</span><span class="token operator">:</span> <span class="token number">100</span><span class="token operator">%</span><span class="token punctuation">;</span>
+    z<span class="token operator">-</span>index<span class="token operator">:</span> <span class="token number">99</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token operator">&amp;</span><span class="token operator">:</span><span class="token operator">:</span>after<span class="token punctuation">{</span>
+    <span class="token literal-property property">position</span><span class="token operator">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token literal-property property">right</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    background<span class="token operator">-</span>color<span class="token operator">:</span> #<span class="token constant">E5F3FD</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">content</span><span class="token operator">:</span> <span class="token string">&quot; &quot;</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">width</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">.</span>27vw<span class="token punctuation">;</span>
+    <span class="token literal-property property">height</span><span class="token operator">:</span> <span class="token number">100</span><span class="token operator">%</span><span class="token punctuation">;</span>
+    z<span class="token operator">-</span>index<span class="token operator">:</span> <span class="token number">99</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token punctuation">.</span>textContent<span class="token punctuation">{</span>
+    white<span class="token operator">-</span>space<span class="token operator">:</span> nowrap<span class="token punctuation">;</span>
+    animation<span class="token operator">-</span>name<span class="token operator">:</span> run<span class="token punctuation">,</span> roop<span class="token punctuation">;</span>
+    animation<span class="token operator">-</span>iteration<span class="token operator">-</span>count<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> infinite<span class="token punctuation">;</span>
+    animation<span class="token operator">-</span>timing<span class="token operator">-</span><span class="token keyword">function</span><span class="token operator">:</span> linear<span class="token punctuation">;</span>
+    <span class="token literal-property property">position</span><span class="token operator">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+@keyframes run <span class="token punctuation">{</span>
+  from <span class="token punctuation">{</span>
+    <span class="token literal-property property">transform</span><span class="token operator">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  to <span class="token punctuation">{</span>
+    <span class="token literal-property property">transform</span><span class="token operator">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">100</span><span class="token operator">%</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+@keyframes roop <span class="token punctuation">{</span>
+  from <span class="token punctuation">{</span>
+    <span class="token literal-property property">transform</span><span class="token operator">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span><span class="token number">86</span><span class="token punctuation">.</span>53vw<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  to <span class="token punctuation">{</span>
+    <span class="token literal-property property">transform</span><span class="token operator">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">100</span><span class="token operator">%</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>解析：</p> <p>1.根据 CSS3 规范 (opens new window)，视口单位主要包括以下 4 个：</p> <ul><li>vw：1vw 等于视口宽度的 1%</li> <li>vh：1vh 等于视口高度的 1%</li> <li>vmin：选取 vw 和 vh 中最小的那个</li> <li>vmax：选取 vw 和 vh 中最大的那个</li></ul> <ol start="2"><li>create react app 支持 less：</li></ol> <ul><li>使用 eject，修改 webpack.config.js</li> <li>使用 react-app-rewired，配置 config-overrides.js</li></ul> <h2 id="_4、面试"><a href="#_4、面试" class="header-anchor">#</a> 4、面试</h2> <h3 id="_1、antd-组件化设计思路是什么"><a href="#_1、antd-组件化设计思路是什么" class="header-anchor">#</a> 1、antd 组件化设计思路是什么？</h3></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新时间:</span> <span class="time">2/27/2023, 11:40:51 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blogs/react/react-ssr.html" class="prev">
+        React-SSR
+      </a></span> <span class="next"><a href="/blogs/react/react-code.html">
+        React源码解析
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blogs/assets/js/app.318ed052.js" defer></script><script src="/blogs/assets/js/2.b253f094.js" defer></script><script src="/blogs/assets/js/61.6a2c3e9b.js" defer></script>
+  </body>
+</html>

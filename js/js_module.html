@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>模块化规范 | 静</title>
+    <meta name="generator" content="VuePress 1.9.8">
+    
+    <meta name="description" content="每天进步一点点">
+    
+    <link rel="preload" href="/blogs/assets/css/0.styles.2b370ae1.css" as="style"><link rel="preload" href="/blogs/assets/js/app.318ed052.js" as="script"><link rel="preload" href="/blogs/assets/js/2.b253f094.js" as="script"><link rel="preload" href="/blogs/assets/js/50.c8d2e9af.js" as="script"><link rel="prefetch" href="/blogs/assets/js/10.dcbb07c9.js"><link rel="prefetch" href="/blogs/assets/js/11.38fbba51.js"><link rel="prefetch" href="/blogs/assets/js/12.2ea56a59.js"><link rel="prefetch" href="/blogs/assets/js/13.0e9d039e.js"><link rel="prefetch" href="/blogs/assets/js/14.2d2bccdc.js"><link rel="prefetch" href="/blogs/assets/js/15.664c4ac5.js"><link rel="prefetch" href="/blogs/assets/js/16.d2aac269.js"><link rel="prefetch" href="/blogs/assets/js/17.ba84ddbb.js"><link rel="prefetch" href="/blogs/assets/js/18.485ea954.js"><link rel="prefetch" href="/blogs/assets/js/19.a66e908f.js"><link rel="prefetch" href="/blogs/assets/js/20.0b04d503.js"><link rel="prefetch" href="/blogs/assets/js/21.6be10f09.js"><link rel="prefetch" href="/blogs/assets/js/22.159acd7d.js"><link rel="prefetch" href="/blogs/assets/js/23.4f195fc5.js"><link rel="prefetch" href="/blogs/assets/js/24.7f87a588.js"><link rel="prefetch" href="/blogs/assets/js/25.5d5a6655.js"><link rel="prefetch" href="/blogs/assets/js/26.ae6e384a.js"><link rel="prefetch" href="/blogs/assets/js/27.242c2814.js"><link rel="prefetch" href="/blogs/assets/js/28.3a561971.js"><link rel="prefetch" href="/blogs/assets/js/29.5f10fcb0.js"><link rel="prefetch" href="/blogs/assets/js/3.3f822af5.js"><link rel="prefetch" href="/blogs/assets/js/30.936b6878.js"><link rel="prefetch" href="/blogs/assets/js/31.1347c229.js"><link rel="prefetch" href="/blogs/assets/js/32.d7feb56f.js"><link rel="prefetch" href="/blogs/assets/js/33.df5562d6.js"><link rel="prefetch" href="/blogs/assets/js/34.0c0a3c4a.js"><link rel="prefetch" href="/blogs/assets/js/35.986ca927.js"><link rel="prefetch" href="/blogs/assets/js/36.11d5619d.js"><link rel="prefetch" href="/blogs/assets/js/37.226a7009.js"><link rel="prefetch" href="/blogs/assets/js/38.d890e85c.js"><link rel="prefetch" href="/blogs/assets/js/39.3fea6c86.js"><link rel="prefetch" href="/blogs/assets/js/4.203b8c1d.js"><link rel="prefetch" href="/blogs/assets/js/40.ea2c4b60.js"><link rel="prefetch" href="/blogs/assets/js/41.c9ccd141.js"><link rel="prefetch" href="/blogs/assets/js/42.8681e81b.js"><link rel="prefetch" href="/blogs/assets/js/43.6722b2e0.js"><link rel="prefetch" href="/blogs/assets/js/44.6794f235.js"><link rel="prefetch" href="/blogs/assets/js/45.a40d2a94.js"><link rel="prefetch" href="/blogs/assets/js/46.661e6a50.js"><link rel="prefetch" href="/blogs/assets/js/47.b764e11a.js"><link rel="prefetch" href="/blogs/assets/js/48.44b2ca69.js"><link rel="prefetch" href="/blogs/assets/js/49.07d58d76.js"><link rel="prefetch" href="/blogs/assets/js/5.241843e3.js"><link rel="prefetch" href="/blogs/assets/js/51.33182cb5.js"><link rel="prefetch" href="/blogs/assets/js/52.ffc8990e.js"><link rel="prefetch" href="/blogs/assets/js/53.fe9f26ff.js"><link rel="prefetch" href="/blogs/assets/js/54.03f0e4ee.js"><link rel="prefetch" href="/blogs/assets/js/55.bcfe8e3c.js"><link rel="prefetch" href="/blogs/assets/js/56.e3679f22.js"><link rel="prefetch" href="/blogs/assets/js/57.fbec18db.js"><link rel="prefetch" href="/blogs/assets/js/58.7dfa5e6d.js"><link rel="prefetch" href="/blogs/assets/js/59.dda5f67e.js"><link rel="prefetch" href="/blogs/assets/js/6.181d1f0e.js"><link rel="prefetch" href="/blogs/assets/js/60.270ae626.js"><link rel="prefetch" href="/blogs/assets/js/61.6a2c3e9b.js"><link rel="prefetch" href="/blogs/assets/js/62.9990c1e5.js"><link rel="prefetch" href="/blogs/assets/js/63.5fbd0e7f.js"><link rel="prefetch" href="/blogs/assets/js/64.ea80a730.js"><link rel="prefetch" href="/blogs/assets/js/65.9bda3580.js"><link rel="prefetch" href="/blogs/assets/js/66.6976f074.js"><link rel="prefetch" href="/blogs/assets/js/67.6421fc3e.js"><link rel="prefetch" href="/blogs/assets/js/68.3c9a69d8.js"><link rel="prefetch" href="/blogs/assets/js/69.e2d07711.js"><link rel="prefetch" href="/blogs/assets/js/7.8d512ac6.js"><link rel="prefetch" href="/blogs/assets/js/70.686ebe8e.js"><link rel="prefetch" href="/blogs/assets/js/71.50a43118.js"><link rel="prefetch" href="/blogs/assets/js/72.3c0b4a7f.js"><link rel="prefetch" href="/blogs/assets/js/73.74d2bda0.js"><link rel="prefetch" href="/blogs/assets/js/74.f1003cb4.js"><link rel="prefetch" href="/blogs/assets/js/75.c1f4c98b.js"><link rel="prefetch" href="/blogs/assets/js/76.4dc3f570.js"><link rel="prefetch" href="/blogs/assets/js/77.5f8de3e2.js"><link rel="prefetch" href="/blogs/assets/js/78.3417b478.js"><link rel="prefetch" href="/blogs/assets/js/79.92ee8e13.js"><link rel="prefetch" href="/blogs/assets/js/8.2ea5d4ca.js"><link rel="prefetch" href="/blogs/assets/js/80.d54c6762.js"><link rel="prefetch" href="/blogs/assets/js/9.df6f0129.js">
+    <link rel="stylesheet" href="/blogs/assets/css/0.styles.2b370ae1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blogs/" class="home-link router-link-active"><img src="./public/head.png" alt="静" class="logo"> <span class="site-name can-hide">静</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blogs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="js" class="dropdown-title"><span class="title">js</span> <span class="arrow down"></span></button> <button type="button" aria-label="js" class="mobile-dropdown-title"><span class="title">js</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/js/js/" class="nav-link">
+  js杂记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/js/promise/" class="nav-link">
+  Promise规范和应用
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/js/browser/" class="nav-link">
+  浏览器对象详解
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/js/js_oop/" class="nav-link">
+  面向对象编程
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/js/es6/" class="nav-link">
+  ES6及ESNext规范详解
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/js/this/" class="nav-link">
+  this指向、作用域、闭包
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/js/git/" class="nav-link">
+  git使用
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/ts/typeScript/" class="nav-link">
+  ts初探
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/ts/tsBasic/" class="nav-link">
+  ts基础
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/ts/tsProject/" class="nav-link">
+  ts工程
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程化" class="dropdown-title"><span class="title">工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="工程化" class="mobile-dropdown-title"><span class="title">工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/js/js_module/" class="nav-link">
+  模块化规范
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/js/js_project/" class="nav-link">
+  前端工程化详解
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/project/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/project/babel/" class="nav-link">
+  babel
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/tools/autotest/" class="nav-link">
+  自动化测试和部署
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/tools/ast/" class="nav-link">
+  AST解析
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/tools/solution/" class="nav-link">
+  前端方案
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/tools/js_tools/" class="nav-link">
+  常用工具
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vue" class="dropdown-title"><span class="title">vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="vue" class="mobile-dropdown-title"><span class="title">vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-basic/" class="nav-link">
+  vue2.0基础
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-advance/" class="nav-link">
+  vue2.0进阶
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-cli/" class="nav-link">
+  vue-cli详解
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-loader/" class="nav-link">
+  vue-loader
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-router/" class="nav-link">
+  vue-router
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vuex/" class="nav-link">
+  vuex
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-ssr/" class="nav-link">
+  vue-ssr
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-i18n/" class="nav-link">
+  vue-i18n
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-life/" class="nav-link">
+  vue生命周期
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-reactive/" class="nav-link">
+  响应式原理
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-diff/" class="nav-link">
+  diff原理
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-compiler/" class="nav-link">
+  编译原理
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-refs/" class="nav-link">
+  vue实战总结
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="react" class="dropdown-title"><span class="title">react</span> <span class="arrow down"></span></button> <button type="button" aria-label="react" class="mobile-dropdown-title"><span class="title">react</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/react/react/" class="nav-link">
+  react基础
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-advance/" class="nav-link">
+  react进阶
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-router/" class="nav-link">
+  react-router
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-state/" class="nav-link">
+  react-状态管理
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-ssr/" class="nav-link">
+  react同构
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-component/" class="nav-link">
+  react组件封装
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-code/" class="nav-link">
+  react源码分析
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-question/" class="nav-link">
+  react问题整理
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-ts-project/" class="nav-link">
+  react-ts实战
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="nodejs" class="dropdown-title"><span class="title">nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="nodejs" class="mobile-dropdown-title"><span class="title">nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/nodejs/basic/" class="nav-link">
+  nodejs基础
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/nodejs/module/" class="nav-link">
+  node常用框架
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/nodejs/http/" class="nav-link">
+  nodejs网络及部署
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/nodejs/express-ts/" class="nav-link">
+  express-ts实战
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/nodejs/info/" class="nav-link">
+  Nodejs前研
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/frontend/interview/" class="nav-link">
+  前端面试
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/performance/" class="nav-link">
+  前端性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/explorer/" class="nav-link">
+  浏览器进程和线程
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/security-control/" class="nav-link">
+  前端网络安全
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/lowcode/" class="nav-link">
+  低代码平台
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/micro-frontend/" class="nav-link">
+  微前端
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/designMode/" class="nav-link">
+  前端设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/css/" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/mini-program/" class="nav-link">
+  小程序
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/hybrid/" class="nav-link">
+  Hybrid开发及原理
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/canvas/" class="nav-link">
+  canvas
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/graph/" class="nav-link">
+  图片格式
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/web3/" class="nav-link">
+  web3探索
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="算法" class="dropdown-title"><span class="title">算法</span> <span class="arrow down"></span></button> <button type="button" aria-label="算法" class="mobile-dropdown-title"><span class="title">算法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/algorithm/graph/" class="nav-link">
+  图的存储和遍历
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/algorithm/dpointer/" class="nav-link">
+  双指针
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/algorithm/levenshtein/" class="nav-link">
+  最端编辑距离算法
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/algorithm/greed/" class="nav-link">
+  贪心算法
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/algorithm/dp/" class="nav-link">
+  动态规划
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/algorithm/leetcode/" class="nav-link">
+  leetcode
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/backend/nginx/" class="nav-link">
+  nginx
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/backend/springboot/" class="nav-link">
+  Springboot
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/backend/mybatis/" class="nav-link">
+  mybatis
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/backend/uml/" class="nav-link">
+  uml类图
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/backend/ddd/" class="nav-link">
+  领域驱动设计
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="友链" class="dropdown-title"><span class="title">友链</span> <span class="arrow down"></span></button> <button type="button" aria-label="友链" class="mobile-dropdown-title"><span class="title">友链</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://lxchuan12.gitee.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  若川博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="http://www.inode.club/interview/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  程序员成长指北-node，面
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blogs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="js" class="dropdown-title"><span class="title">js</span> <span class="arrow down"></span></button> <button type="button" aria-label="js" class="mobile-dropdown-title"><span class="title">js</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/js/js/" class="nav-link">
+  js杂记
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/js/promise/" class="nav-link">
+  Promise规范和应用
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/js/browser/" class="nav-link">
+  浏览器对象详解
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/js/js_oop/" class="nav-link">
+  面向对象编程
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/js/es6/" class="nav-link">
+  ES6及ESNext规范详解
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/js/this/" class="nav-link">
+  this指向、作用域、闭包
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/js/git/" class="nav-link">
+  git使用
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/ts/typeScript/" class="nav-link">
+  ts初探
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/ts/tsBasic/" class="nav-link">
+  ts基础
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/ts/tsProject/" class="nav-link">
+  ts工程
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工程化" class="dropdown-title"><span class="title">工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="工程化" class="mobile-dropdown-title"><span class="title">工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/js/js_module/" class="nav-link">
+  模块化规范
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/js/js_project/" class="nav-link">
+  前端工程化详解
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/project/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/project/babel/" class="nav-link">
+  babel
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/tools/autotest/" class="nav-link">
+  自动化测试和部署
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/tools/ast/" class="nav-link">
+  AST解析
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/tools/solution/" class="nav-link">
+  前端方案
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/tools/js_tools/" class="nav-link">
+  常用工具
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vue" class="dropdown-title"><span class="title">vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="vue" class="mobile-dropdown-title"><span class="title">vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-basic/" class="nav-link">
+  vue2.0基础
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-advance/" class="nav-link">
+  vue2.0进阶
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-cli/" class="nav-link">
+  vue-cli详解
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-loader/" class="nav-link">
+  vue-loader
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-router/" class="nav-link">
+  vue-router
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vuex/" class="nav-link">
+  vuex
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-ssr/" class="nav-link">
+  vue-ssr
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-i18n/" class="nav-link">
+  vue-i18n
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-life/" class="nav-link">
+  vue生命周期
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-reactive/" class="nav-link">
+  响应式原理
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-diff/" class="nav-link">
+  diff原理
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-compiler/" class="nav-link">
+  编译原理
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/vue/vue-refs/" class="nav-link">
+  vue实战总结
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="react" class="dropdown-title"><span class="title">react</span> <span class="arrow down"></span></button> <button type="button" aria-label="react" class="mobile-dropdown-title"><span class="title">react</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/react/react/" class="nav-link">
+  react基础
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-advance/" class="nav-link">
+  react进阶
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-router/" class="nav-link">
+  react-router
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-state/" class="nav-link">
+  react-状态管理
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-ssr/" class="nav-link">
+  react同构
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-component/" class="nav-link">
+  react组件封装
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-code/" class="nav-link">
+  react源码分析
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-question/" class="nav-link">
+  react问题整理
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/react/react-ts-project/" class="nav-link">
+  react-ts实战
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="nodejs" class="dropdown-title"><span class="title">nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="nodejs" class="mobile-dropdown-title"><span class="title">nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/nodejs/basic/" class="nav-link">
+  nodejs基础
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/nodejs/module/" class="nav-link">
+  node常用框架
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/nodejs/http/" class="nav-link">
+  nodejs网络及部署
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/nodejs/express-ts/" class="nav-link">
+  express-ts实战
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/nodejs/info/" class="nav-link">
+  Nodejs前研
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/frontend/interview/" class="nav-link">
+  前端面试
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/performance/" class="nav-link">
+  前端性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/explorer/" class="nav-link">
+  浏览器进程和线程
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/security-control/" class="nav-link">
+  前端网络安全
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/lowcode/" class="nav-link">
+  低代码平台
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/micro-frontend/" class="nav-link">
+  微前端
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/designMode/" class="nav-link">
+  前端设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/css/" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/mini-program/" class="nav-link">
+  小程序
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/hybrid/" class="nav-link">
+  Hybrid开发及原理
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/canvas/" class="nav-link">
+  canvas
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/graph/" class="nav-link">
+  图片格式
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/frontend/web3/" class="nav-link">
+  web3探索
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="算法" class="dropdown-title"><span class="title">算法</span> <span class="arrow down"></span></button> <button type="button" aria-label="算法" class="mobile-dropdown-title"><span class="title">算法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/algorithm/graph/" class="nav-link">
+  图的存储和遍历
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/algorithm/dpointer/" class="nav-link">
+  双指针
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/algorithm/levenshtein/" class="nav-link">
+  最端编辑距离算法
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/algorithm/greed/" class="nav-link">
+  贪心算法
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/algorithm/dp/" class="nav-link">
+  动态规划
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/algorithm/leetcode/" class="nav-link">
+  leetcode
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/backend/nginx/" class="nav-link">
+  nginx
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/backend/springboot/" class="nav-link">
+  Springboot
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/backend/mybatis/" class="nav-link">
+  mybatis
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/backend/uml/" class="nav-link">
+  uml类图
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/backend/ddd/" class="nav-link">
+  领域驱动设计
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="友链" class="dropdown-title"><span class="title">友链</span> <span class="arrow down"></span></button> <button type="button" aria-label="友链" class="mobile-dropdown-title"><span class="title">友链</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://lxchuan12.gitee.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  若川博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="http://www.inode.club/interview/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  程序员成长指北-node，面
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Git</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/js/git.html" class="sidebar-link">git</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>JavaScript常见问题梳理</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/js/js.html" class="sidebar-link">avaScript常见问题梳理</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Promise规范和应用</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/js/promise.html" class="sidebar-link">promise</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>浏览器对象详解</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/js/browser.html" class="sidebar-link">浏览器对象详解</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>面向对象编程</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/js/js_oop.html" class="sidebar-link">面向对象编程</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>ES6及ESNext规范详解</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/js/es6.html" class="sidebar-link">ES6及ESNext规范详解</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>this指向、作用域、闭包</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/js/this.html" class="sidebar-link">this指向、作用域、闭包</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>模块化规范</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/js/js_module.html" aria-current="page" class="active sidebar-link">模块化规范</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blogs/js/js_module.html#_1、iife" class="sidebar-link">1、IIFE</a></li><li class="sidebar-sub-header"><a href="/blogs/js/js_module.html#_1、commonjs" class="sidebar-link">1、commonJS</a></li><li class="sidebar-sub-header"><a href="/blogs/js/js_module.html#_3、amd" class="sidebar-link">3、AMD</a></li><li class="sidebar-sub-header"><a href="/blogs/js/js_module.html#_4、cmd" class="sidebar-link">4、CMD</a></li><li class="sidebar-sub-header"><a href="/blogs/js/js_module.html#_5、umd" class="sidebar-link">5、UMD</a></li><li class="sidebar-sub-header"><a href="/blogs/js/js_module.html#_6、esmodule-规范" class="sidebar-link">6、ESModule 规范</a></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>前端工程化详解</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/js/js_project.html" class="sidebar-link">前端工程化详解</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="模块化规范"><a href="#模块化规范" class="header-anchor">#</a> 模块化规范</h1> <h4 id="一、参考资料"><a href="#一、参考资料" class="header-anchor">#</a> 一、参考资料：</h4> <p>1、<a href="https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/28" target="_blank" rel="noopener noreferrer">介绍模块化发展的历程<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>2、<a href="https://www.processon.com/view/link/5c8409bbe4b02b2ce492286a" target="_blank" rel="noopener noreferrer">各模块化规范思维导图<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>相关问题</p> <p>1、模块化的作用</p> <p>抽取公共代码、隔离作用域、依赖管理</p> <p>2、模块化历史</p> <p>无模块化(IIFE) -&gt; CommonJS -&gt; AMD -&gt; CMD -&gt; ESModule，特殊 UMD</p> <h2 id="_1、iife"><a href="#_1、iife" class="header-anchor">#</a> 1、IIFE</h2> <p>在单独的函数作用域中执行代码，避免冲突</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>jQuery<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//注入对象</span>
+</code></pre></div><h2 id="_1、commonjs"><a href="#_1、commonjs" class="header-anchor">#</a> 1、commonJS</h2> <ul><li>服务器端 node，浏览器端 webpack|browserfy</li> <li>文件即模块，模块加载同步：服务器端模块加载是运行时同步加载，浏览器模块加载是提前编译打包处理</li> <li>exports = module.exports 输出（不能给 exports 赋值，导致与 module 引用断开）， require 引入</li> <li>缓存：require 值会缓存，通过 require 引用文件时，会将文件执行一遍后，将结果通过浅克隆的方式，写入全局内存，后续 require 该路径，直接从内存获取，无需重新执行文件</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// a.js</span>
+<span class="token keyword">var</span> name <span class="token operator">=</span> <span class="token string">&quot;morrain&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> age <span class="token operator">=</span> <span class="token number">18</span><span class="token punctuation">;</span>
+exports<span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+exports<span class="token punctuation">.</span><span class="token function-variable function">getAge</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> age<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">// b.js</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;a.js&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 'morrain'</span>
+a<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">&quot;rename&quot;</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 'morrain'</span>
+<span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;a.js&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 'rename'</span>
+</code></pre></div><ul><li>模块输出是值的拷贝，一但输出，模块内部变化后，无法影响之前的引用，而 ESModule 是引用拷贝</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// a.js</span>
+<span class="token keyword">var</span> name <span class="token operator">=</span> <span class="token string">&quot;morrain&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> age <span class="token operator">=</span> <span class="token number">18</span><span class="token punctuation">;</span>
+exports<span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+exports<span class="token punctuation">.</span>age <span class="token operator">=</span> age<span class="token punctuation">;</span>
+exports<span class="token punctuation">.</span><span class="token function-variable function">setAge</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">a</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  age <span class="token operator">=</span> a<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">// b.js</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;a.js&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">.</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 18</span>
+a<span class="token punctuation">.</span><span class="token function">setAge</span><span class="token punctuation">(</span><span class="token number">19</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">.</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 18</span>
+</code></pre></div><ul><li>commonJS 运行时加载，ESModule 编译阶段引用
+<ul><li>CommonJS 在引入时是加载整个模块，生成一个对象，然后再从这个生成的对象上读取方法和属性</li> <li>ESModule 不是对象，而是通过 export 暴露出要输出的代码块，在 import 时使用静态命令的方法引用制定的输出代码块，并在 import 语句处执行这个要输出的代码，而不是直接加载整个模块</li></ul></li></ul> <h2 id="_3、amd"><a href="#_3、amd" class="header-anchor">#</a> 3、AMD</h2> <ul><li>AMD(Asynchronous module definition)异步的模块定义，浏览器端运行，所有模块默认都是异步加载</li> <li>代表 requireJS：https://requirejs.org/docs/api.html</li> <li>使用：定义 define、加载 require、配置 config</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 定义：define(id?, depencies?, factory);</span>
+<span class="token comment">// utils和bar可直接使用</span>
+<span class="token function">define</span><span class="token punctuation">(</span><span class="token string">&quot;foo&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">&quot;utils&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;bar&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">utils<span class="token punctuation">,</span> bar</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  utils<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;foo&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//配置模块：可以直接配置依赖路径</span>
+require<span class="token punctuation">.</span><span class="token function">config</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">paths</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">jquery</span><span class="token operator">:</span> <span class="token string">&quot;https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//加载模块：提前加载</span>
+<span class="token function">require</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">&quot;jquery&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">jquery</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ....</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//提前加载执行顺序</span>
+<span class="token comment">// RequireJS</span>
+<span class="token function">define</span><span class="token punctuation">(</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;a load&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token function-variable function">run</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;a run&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">define</span><span class="token punctuation">(</span><span class="token string">&quot;b&quot;</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;b load&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token function-variable function">run</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;b run&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">require</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;b&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;main run&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 🔥</span>
+  a<span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  b<span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// a load</span>
+<span class="token comment">// b load</span>
+<span class="token comment">// main run</span>
+<span class="token comment">// a run</span>
+<span class="token comment">// b run</span>
+</code></pre></div><h2 id="_4、cmd"><a href="#_4、cmd" class="header-anchor">#</a> 4、CMD</h2> <p>代表 seaJS，特点支持动态引入依赖文件，按需加载
+整合了 commonJS 和 AMD 的特点，浏览器端运行</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 引入require</span>
+<span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;fs&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//同步</span>
+require<span class="token punctuation">.</span><span class="token function">async</span><span class="token punctuation">(</span><span class="token string">&quot;./module3&quot;</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">m3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//异步</span>
+
+<span class="token comment">// sea.js，按需引入</span>
+<span class="token function">define</span><span class="token punctuation">(</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">require<span class="token punctuation">,</span> exports<span class="token punctuation">,</span> module</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;a load&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  exports<span class="token punctuation">.</span><span class="token function-variable function">run</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;a run&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">define</span><span class="token punctuation">(</span><span class="token string">&quot;b&quot;</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">require<span class="token punctuation">,</span> exports<span class="token punctuation">,</span> module</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;b load&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  exports<span class="token punctuation">.</span><span class="token function-variable function">run</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;b run&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">define</span><span class="token punctuation">(</span><span class="token string">&quot;main&quot;</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">require<span class="token punctuation">,</span> exports<span class="token punctuation">,</span> module</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;main run&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  a<span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;b&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  b<span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+seajs<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token string">&quot;main&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// main run</span>
+<span class="token comment">// a load</span>
+<span class="token comment">// a run</span>
+<span class="token comment">// b load</span>
+<span class="token comment">// b run</span>
+</code></pre></div><h2 id="_5、umd"><a href="#_5、umd" class="header-anchor">#</a> 5、UMD</h2> <p>兼容 commonJS 和 AMD 模块化语法，作为一种 同构(isomorphic) 的模块化解决方案，判断这些模块化规范的特征值，判断出当前究竟在哪种模块化规范的环境下，然后把模块内容用检测出的模块化规范的语法导出</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">self<span class="token punctuation">,</span> factory</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> module <span class="token operator">===</span> <span class="token string">&quot;object&quot;</span> <span class="token operator">&amp;&amp;</span> <span class="token keyword">typeof</span> module<span class="token punctuation">.</span>exports <span class="token operator">===</span> <span class="token string">&quot;object&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 当前环境是 CommonJS 规范环境</span>
+    module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token function">factory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> define <span class="token operator">===</span> <span class="token string">&quot;function&quot;</span> <span class="token operator">&amp;&amp;</span> define<span class="token punctuation">.</span>amd<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 当前环境是 AMD 规范环境</span>
+    <span class="token function">define</span><span class="token punctuation">(</span>factory<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 什么环境都不是，直接挂在全局对象上</span>
+    self<span class="token punctuation">.</span>umdModule <span class="token operator">=</span> <span class="token function">factory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="_6、esmodule-规范"><a href="#_6、esmodule-规范" class="header-anchor">#</a> 6、ESModule 规范</h2> <ul><li>服务端和浏览器端通用，ESModule 是由 JS 解释器实现，commonjs 和 amd 是在宿主环境中运行时实现</li> <li>import 输入、export 输出（export default Module、export default Module）</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//export 一个模块只能有一个默认输出</span>
+<span class="token keyword">export</span> <span class="token keyword">var</span> firstName <span class="token operator">=</span> <span class="token string">'scp'</span>
+<span class="token keyword">export</span> <span class="token keyword">var</span> lastName <span class="token operator">=</span> <span class="token string">'scp'</span>
+<span class="token keyword">var</span> firstName <span class="token operator">=</span> <span class="token string">'scp'</span>
+<span class="token keyword">var</span> lastName <span class="token operator">=</span> <span class="token string">'scp'</span>
+<span class="token keyword">export</span> <span class="token punctuation">{</span>firstName<span class="token punctuation">,</span> lastName <span class="token keyword">as</span> b<span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> firstName
+
+<span class="token comment">//import 无{}为默认, *为模块整体加载</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">crc32</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>crc32<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'crc32'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">crc32</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token keyword">import</span> crc32 <span class="token keyword">from</span> <span class="token string">'crc32'</span>
+
+<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> circle <span class="token keyword">from</span> <span class="token string">'./circle'</span>
+circle<span class="token punctuation">.</span><span class="token function">area</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span>
+circle<span class="token punctuation">.</span><span class="token function">circumference</span><span class="token punctuation">(</span><span class="token number">14</span><span class="token punctuation">)</span>
+
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新时间:</span> <span class="time">3/13/2023, 11:05:26 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blogs/js/this.html" class="prev">
+        this指向、作用域、闭包
+      </a></span> <span class="next"><a href="/blogs/js/js_project.html">
+        前端工程化详解
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blogs/assets/js/app.318ed052.js" defer></script><script src="/blogs/assets/js/2.b253f094.js" defer></script><script src="/blogs/assets/js/50.c8d2e9af.js" defer></script>
+  </body>
+</html>
